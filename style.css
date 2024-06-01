@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #684bb1;
+}
+
+.background {
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.header {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+
+.main {
+  display: flex;
+  gap: 5.9rem;
+  height: calc(100% - 20rem);
+}
+
+.main-image {
+  flex: 1;
+}
+
+.main-content {
+  flex: 1;
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content h1 {
+  font-family: "Poppins";
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 6rem;
+  color: #ffffff;
+  margin-bottom: 2.4rem;
+}
+
+.main-content p {
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  color: #ffffff;
+  margin-bottom: 2.4rem;
+}
+
+.btn {
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  color: #684bb1;
+
+  width: 20rem;
+  height: 5.6rem;
+  border-radius: 2.8rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0.2rem 0.4rem 0.9rem 0.3rem rgba(0, 0, 0, 0.26);
+  background-color: #ffffff;
+  transition: 0.3s ease;
+  padding: 1.4rem;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #e880e8;
+}
+
+.main-content-social {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 1.6rem;
+  height: 100%;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 72rem) {
+  .background {
+    background-image: url("./images/bg-mobile.svg");
+  }
+
+  .header img {
+    max-width: 12rem;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-image {
+    flex: 0;
+  }
+
+  .main-content {
+    align-items: center;
+  }
+
+  .main-content h1 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 1.6rem;
+    text-align: center;
+  }
+
+  .main-content p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding: 1rem;
+  }
+
+  .main-content-social {
+    margin-bottom: 0;
+    height: max-content;
+    margin-top: 3.2rem;
+  }
+
+  .main-content-social img {
+    max-width: 2.8rem;
+  }
+}
